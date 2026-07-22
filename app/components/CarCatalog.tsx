@@ -33,8 +33,8 @@ export default function CarCatalog({ cars }: { cars: Car[] }) {
                         key={cat}
                         onClick={() => setSelectedCategory(cat)}
                         className={`px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${selectedCategory === cat
-                            ? 'bg-linear-to-r from-amber-300 via-amber-400 to-amber-500 text-slate-950 shadow-lg shadow-amber-400/20 scale-105'
-                            : 'bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-amber-400/40'
+                                ? 'bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 text-slate-950 shadow-lg shadow-amber-400/20 scale-105'
+                                : 'bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-amber-400/40'
                             }`}
                     >
                         {cat}
@@ -90,7 +90,7 @@ export default function CarCatalog({ cars }: { cars: Car[] }) {
                                     </div>
                                     <div className="flex items-center gap-1.5">
                                         <Briefcase className="w-3.5 h-3.5 text-amber-400" />
-                                        <span>Penumpang</span>
+                                        <span>Bagasi</span>
                                     </div>
                                     <div className="flex items-center gap-1.5 col-span-2">
                                         <Settings className="w-3.5 h-3.5 text-amber-400" />
@@ -108,12 +108,12 @@ export default function CarCatalog({ cars }: { cars: Car[] }) {
                                     </span>
                                 </div>
 
+                                {/* NOMOR WA DIUPDATE DI SINI */}
                                 <a
-                                    // NOMOR WA DIUPDATE DI SINI
-                                    href={`https://wa.me/6281333984636?text=${waMessage}`}
+                                    href={`https://wa.me/62812835557?text=${waMessage}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl transition-all duration-300 hover:scale-105 shadow-md shadow-amber-400/20 flex items-center justify-center gap-1.5 uppercase tracking-wider"
+                                    className="bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl transition-all duration-300 hover:scale-105 shadow-md shadow-amber-400/20 flex items-center gap-1.5 uppercase tracking-wider"
                                 >
                                     <MessageCircle className="w-3.5 h-3.5" />
                                     <span>Sewa</span>

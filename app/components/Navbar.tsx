@@ -51,7 +51,7 @@ export default function Navbar() {
 
                 {/* NOMOR WA DIUPDATE DI SINI */}
                 <a
-                    href="https://wa.me/6281333984636?text=Halo%20PT%20Anugerah%20Berkah%20Solution,%20saya%20ingin%20sewa%20armada."
+                    href="https://wa.me/62812835557?text=Halo%20PT%20Anugerah%20Berkah%20Solution,%20saya%20ingin%20sewa%20armada."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hidden md:flex bg-amber-400 hover:bg-amber-300 text-slate-950 px-5 py-2.5 rounded-full text-xs font-black tracking-wider uppercase transition-all shadow-lg shadow-amber-400/20 hover:scale-105 items-center gap-2"

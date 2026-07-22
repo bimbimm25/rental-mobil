@@ -1,7 +1,7 @@
 import { supabase } from '../lib/supabase';
 import CarCatalog from './components/CarCatalog';
 import ScrollAnimation from './components/ScrollAnimation';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar'; // Memanggil Navbar dinamis
 import {
   Car,
   Calendar,
@@ -41,6 +41,7 @@ export default async function Home() {
           id="beranda"
           className="reveal-on-scroll opacity-0 translate-y-12 transition-all duration-1000 ease-out relative h-screen min-h-150 flex flex-col items-center justify-center bg-[#0B0C0E] overflow-hidden mt-5"
         >
+          {/* Efek Cahaya Halus di Latar Belakang */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-100 bg-amber-500/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
 
           <div className="max-w-5xl mx-auto px-6 text-center relative z-10 flex flex-col items-center mt-12">
@@ -57,7 +58,7 @@ export default async function Home() {
 
             {/* NOMOR WA DIUPDATE DI SINI */}
             <a
-              href="https://wa.me/6281333984636?text=Halo%20PT%20Anugerah%20Berkah%20Solution,%20saya%20ingin%20konsultasi%20sewa%20mobil."
+              href="https://wa.me/62812835557?text=Halo%20PT%20Anugerah%20Berkah%20Solution,%20saya%20ingin%20konsultasi%20sewa%20mobil."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-amber-500 text-slate-950 px-8 py-3.5 rounded-full font-bold text-sm md:text-base transition-all hover:scale-105 shadow-[0_0px_40px_-10px_rgba(245,158,11,0.5)]"
@@ -68,7 +69,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 3. LAYANAN KAMI */}
+        {/* 3. LAYANAN KAMI - Delay 150ms */}
         <section
           id="layanan"
           className="reveal-on-scroll opacity-0 translate-y-12 delay-150 transition-all duration-1000 ease-out py-20 bg-slate-950/80 border-y border-slate-800/80"
@@ -115,7 +116,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 4. MENGAPA HARUS MEMILIH */}
+        {/* 4. MENGAPA HARUS MEMILIH - Delay 300ms */}
         <section
           id="keunggulan"
           className="reveal-on-scroll opacity-0 translate-y-12 delay-300 transition-all duration-1000 ease-out py-20"
@@ -199,7 +200,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 5. DAFTAR ARMADA */}
+        {/* 5. DAFTAR ARMADA - Delay 150ms */}
         <section
           id="armada"
           className="reveal-on-scroll opacity-0 translate-y-12 delay-150 transition-all duration-1000 ease-out py-20 bg-slate-950/60 border-y border-slate-800/80"
@@ -215,7 +216,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 6. TESTIMONI */}
+        {/* 6. TESTIMONI - Delay 300ms */}
         <section
           id="testimoni"
           className="reveal-on-scroll opacity-0 scale-95 delay-300 transition-all duration-1000 ease-out py-20 bg-slate-900/80 border-b border-slate-800/80"
@@ -371,7 +372,7 @@ export default async function Home() {
             </p>
             {/* NOMOR WA DIUPDATE DI SINI */}
             <a
-              href="https://wa.me/6281333984636?text=Halo%20PT%20Anugerah%20Berkah%20Solution,%20saya%20ingin%20sewa%20armada."
+              href="https://wa.me/62812835557?text=Halo%20PT%20Anugerah%20Berkah%20Solution,%20saya%20ingin%20sewa%20armada."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-amber-400 hover:bg-amber-300 text-slate-950 font-black px-8 py-4 rounded-xl mt-8 transition-all shadow-xl shadow-amber-400/20 text-xs uppercase tracking-widest hover:-translate-y-1"
@@ -381,7 +382,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 9. FOOTER PROFESIONAL */}
+        {/* 9. FOOTER PROFESIONAL DENGAN NATIVE SVG SOCIAL ICONS */}
         <footer className="bg-[#0B0C0E] border-t border-slate-800/80 pt-20 pb-8 relative overflow-hidden">
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-500/5 blur-[150px] rounded-full pointer-events-none -z-10"></div>
 
@@ -400,6 +401,7 @@ export default async function Home() {
                 Penyedia layanan transportasi VIP dan Luxury terbaik di Surabaya & Sidoarjo. Mengutamakan kenyamanan, keamanan, dan pelayanan berkelas dengan armada Modifikasi Premium untuk setiap perjalanan Anda.
               </p>
 
+              {/* Media Sosial Menggunakan Native SVG agar Bebas Error */}
               <div className="flex items-center gap-4 pt-2">
                 <a href="#" className="w-10 h-10 rounded-full bg-slate-900/80 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-amber-400 hover:text-slate-950 hover:border-amber-400 transition-all duration-300 hover:-translate-y-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
@@ -453,7 +455,7 @@ export default async function Home() {
                     <Phone className="w-4 h-4 text-amber-400" />
                   </div>
                   {/* TEKS NOMOR HP DIUPDATE DI SINI */}
-                  <span className="mt-1">+62 813-3398-4636</span>
+                  <span className="mt-1">+62 812-8355-57</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <div className="p-2 bg-slate-900 rounded-lg border border-slate-800 shrink-0">
