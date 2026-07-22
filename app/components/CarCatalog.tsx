@@ -33,7 +33,7 @@ export default function CarCatalog({ cars }: { cars: Car[] }) {
                         key={cat}
                         onClick={() => setSelectedCategory(cat)}
                         className={`px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${selectedCategory === cat
-                                ? 'bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 text-slate-950 shadow-lg shadow-amber-400/20 scale-105'
+                                ? 'bg-linear-to-r from-amber-300 via-amber-400 to-amber-500 text-slate-950 shadow-lg shadow-amber-400/20 scale-105'
                                 : 'bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-amber-400/40'
                             }`}
                     >
