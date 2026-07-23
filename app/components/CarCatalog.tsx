@@ -33,7 +33,7 @@ export default function CarCatalog({ cars }: { cars: Car[] }) {
                         key={cat}
                         onClick={() => setSelectedCategory(cat)}
                         className={`px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${selectedCategory === cat
-                                ? 'bg-linear-to-r from-amber-300 via-amber-400 to-amber-500 text-slate-950 shadow-lg shadow-amber-400/20 scale-105'
+                                ? 'bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 text-slate-950 shadow-lg shadow-amber-400/20 scale-105'
                                 : 'bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-amber-400/40'
                             }`}
                     >
@@ -46,7 +46,7 @@ export default function CarCatalog({ cars }: { cars: Car[] }) {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {filteredCars.map((car, idx) => {
                     const waMessage = encodeURIComponent(
-                        `Halo PT Anugerah Berkah Solution, saya tertarik untuk menyewa unit ${car.brand} ${car.model}. Mohon informasi ketersediaan dan penawarannya.`
+                        `Halo Aura Premium Trans, saya tertarik untuk menyewa unit ${car.brand} ${car.model}. Mohon informasi ketersediaan dan penawarannya.`
                     );
 
                     return (
@@ -108,7 +108,6 @@ export default function CarCatalog({ cars }: { cars: Car[] }) {
                                     </span>
                                 </div>
 
-                                {/* NOMOR WA DIUPDATE DI SINI */}
                                 <a
                                     href={`https://wa.me/62812835557?text=${waMessage}`}
                                     target="_blank"

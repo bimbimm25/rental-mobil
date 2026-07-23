@@ -33,10 +33,10 @@ export default function Navbar() {
                     </div>
                     <div>
                         <span className="text-lg font-black tracking-wider text-white block leading-none">
-                            PT ANUGERAH BERKAH SOLUTION
+                            AURA PREMIUM TRANS
                         </span>
                         <span className="text-[10px] tracking-[0.25em] font-bold text-amber-400 block mt-1 uppercase">
-                            Transport & Luxury Car Rental
+                            PT Aura Trans Nusantara
                         </span>
                     </div>
                 </div>
@@ -49,9 +49,8 @@ export default function Navbar() {
                     <a href="#testimoni" className="hover:text-amber-400 transition-colors">Testimoni</a>
                 </nav>
 
-                {/* NOMOR WA DIUPDATE DI SINI */}
                 <a
-                    href="https://wa.me/62812835557?text=Halo%20PT%20Anugerah%20Berkah%20Solution,%20saya%20ingin%20sewa%20armada."
+                    href="https://wa.me/62812835557?text=Halo%20Aura%20Premium%20Trans,%20saya%20ingin%20sewa%20armada."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hidden md:flex bg-amber-400 hover:bg-amber-300 text-slate-950 px-5 py-2.5 rounded-full text-xs font-black tracking-wider uppercase transition-all shadow-lg shadow-amber-400/20 hover:scale-105 items-center gap-2"

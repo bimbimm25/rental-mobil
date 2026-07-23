@@ -1,7 +1,7 @@
 import { supabase } from '../lib/supabase';
 import CarCatalog from './components/CarCatalog';
 import ScrollAnimation from './components/ScrollAnimation';
-import Navbar from './components/Navbar'; // Memanggil Navbar dinamis
+import Navbar from './components/Navbar';
 import {
   Car,
   Calendar,
@@ -41,7 +41,6 @@ export default async function Home() {
           id="beranda"
           className="reveal-on-scroll opacity-0 translate-y-12 transition-all duration-1000 ease-out relative h-screen min-h-150 flex flex-col items-center justify-center bg-[#0B0C0E] overflow-hidden mt-5"
         >
-          {/* Efek Cahaya Halus di Latar Belakang */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-100 bg-amber-500/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
 
           <div className="max-w-5xl mx-auto px-6 text-center relative z-10 flex flex-col items-center mt-12">
@@ -53,12 +52,11 @@ export default async function Home() {
             </h1>
 
             <p className="text-slate-400 text-sm sm:text-base md:text-lg max-w-200 mx-auto leading-relaxed mb-10">
-              PT Anugerah Berkah Solution merupakan perusahaan penyedia jasa transportasi yang telah berpengalaman. Berkomitmen menyediakan armada Luxury dan VIP berkualitas dengan driver profesional.
+              PT Aura Trans Nusantara merupakan perusahaan penyedia jasa transportasi yang telah berpengalaman. Berkomitmen menyediakan armada Luxury dan VIP berkualitas dengan driver profesional.
             </p>
 
-            {/* NOMOR WA DIUPDATE DI SINI */}
             <a
-              href="https://wa.me/62812835557?text=Halo%20PT%20Anugerah%20Berkah%20Solution,%20saya%20ingin%20konsultasi%20sewa%20mobil."
+              href="https://wa.me/62812835557?text=Halo%20Aura%20Premium%20Trans,%20saya%20ingin%20konsultasi%20sewa%20mobil."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-amber-500 text-slate-950 px-8 py-3.5 rounded-full font-bold text-sm md:text-base transition-all hover:scale-105 shadow-[0_0px_40px_-10px_rgba(245,158,11,0.5)]"
@@ -69,7 +67,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 3. LAYANAN KAMI - Delay 150ms */}
+        {/* 3. LAYANAN KAMI */}
         <section
           id="layanan"
           className="reveal-on-scroll opacity-0 translate-y-12 delay-150 transition-all duration-1000 ease-out py-20 bg-slate-950/80 border-y border-slate-800/80"
@@ -77,7 +75,7 @@ export default async function Home() {
           <div className="max-w-7xl mx-auto px-6 text-center">
             <h2 className="text-2xl font-black text-white uppercase tracking-wider">Layanan Kami</h2>
             <p className="text-slate-400 mt-2 text-sm max-w-xl mx-auto">
-              PT Anugerah Berkah Solution menyediakan berbagai jenis layanan transportasi profesional yang dapat disesuaikan.
+              PT Aura Trans Nusantara menyediakan berbagai jenis layanan transportasi profesional yang dapat disesuaikan.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
@@ -116,7 +114,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 4. MENGAPA HARUS MEMILIH - Delay 300ms */}
+        {/* 4. MENGAPA HARUS MEMILIH */}
         <section
           id="keunggulan"
           className="reveal-on-scroll opacity-0 translate-y-12 delay-300 transition-all duration-1000 ease-out py-20"
@@ -127,7 +125,7 @@ export default async function Home() {
               <h2 className="text-3xl sm:text-4xl font-black text-white leading-tight uppercase">
                 Mengapa Harus Memilih <br />
                 <span className="bg-linear-to-r from-amber-200 via-amber-400 to-amber-600 bg-clip-text text-transparent">
-                  PT Anugerah Berkah Solution?
+                  Aura Premium Trans?
                 </span>
               </h2>
               <p className="text-slate-400 mt-4 text-sm leading-relaxed">
@@ -200,7 +198,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 5. DAFTAR ARMADA - Delay 150ms */}
+        {/* 5. DAFTAR ARMADA */}
         <section
           id="armada"
           className="reveal-on-scroll opacity-0 translate-y-12 delay-150 transition-all duration-1000 ease-out py-20 bg-slate-950/60 border-y border-slate-800/80"
@@ -216,7 +214,7 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* 6. TESTIMONI - Delay 300ms */}
+        {/* 6. TESTIMONI */}
         <section
           id="testimoni"
           className="reveal-on-scroll opacity-0 scale-95 delay-300 transition-all duration-1000 ease-out py-20 bg-slate-900/80 border-b border-slate-800/80"
@@ -256,7 +254,7 @@ export default async function Home() {
                     ))}
                   </div>
                   <p className="text-xs text-slate-300 leading-relaxed italic">
-                    "Sewa Alphard untuk acara pernikahan, unit sangat bersih, wangi, dan perjalanannya sangat mulus. Terima kasih PT Anugerah Berkah Solution!"
+                    "Sewa Alphard untuk acara pernikahan, unit sangat bersih, wangi, dan perjalanannya sangat mulus. Terima kasih Aura Premium Trans!"
                   </p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-900 flex items-center gap-3">
@@ -370,9 +368,8 @@ export default async function Home() {
             <p className="text-slate-400 mt-4 text-sm leading-relaxed">
               Jangan ragu untuk menghubungi kami. Tim kami siap memberikan penawaran terbaik untuk kebutuhan transportasi Anda.
             </p>
-            {/* NOMOR WA DIUPDATE DI SINI */}
             <a
-              href="https://wa.me/62812835557?text=Halo%20PT%20Anugerah%20Berkah%20Solution,%20saya%20ingin%20sewa%20armada."
+              href="https://wa.me/62812835557?text=Halo%20Aura%20Premium%20Trans,%20saya%20ingin%20sewa%20armada."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-amber-400 hover:bg-amber-300 text-slate-950 font-black px-8 py-4 rounded-xl mt-8 transition-all shadow-xl shadow-amber-400/20 text-xs uppercase tracking-widest hover:-translate-y-1"
@@ -391,17 +388,16 @@ export default async function Home() {
             <div className="md:col-span-5 space-y-6">
               <div>
                 <span className="text-xl font-black text-white uppercase tracking-widest block leading-none">
-                  PT ANUGERAH BERKAH <span className="text-amber-400">SOLUTION</span>
+                  AURA PREMIUM <span className="text-amber-400">TRANS</span>
                 </span>
                 <span className="text-[10px] tracking-[0.2em] font-bold text-slate-500 block mt-2 uppercase">
-                  (@ab.trans) • Premium Car Rental
+                  (@auratrans.id) • Premium Car Rental
                 </span>
               </div>
               <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
                 Penyedia layanan transportasi VIP dan Luxury terbaik di Surabaya & Sidoarjo. Mengutamakan kenyamanan, keamanan, dan pelayanan berkelas dengan armada Modifikasi Premium untuk setiap perjalanan Anda.
               </p>
 
-              {/* Media Sosial Menggunakan Native SVG agar Bebas Error */}
               <div className="flex items-center gap-4 pt-2">
                 <a href="#" className="w-10 h-10 rounded-full bg-slate-900/80 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-amber-400 hover:text-slate-950 hover:border-amber-400 transition-all duration-300 hover:-translate-y-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
@@ -454,14 +450,13 @@ export default async function Home() {
                   <div className="p-2 bg-slate-900 rounded-lg border border-slate-800 shrink-0">
                     <Phone className="w-4 h-4 text-amber-400" />
                   </div>
-                  {/* TEKS NOMOR HP DIUPDATE DI SINI */}
                   <span className="mt-1">+62 812-8355-57</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <div className="p-2 bg-slate-900 rounded-lg border border-slate-800 shrink-0">
                     <Mail className="w-4 h-4 text-amber-400" />
                   </div>
-                  <span className="mt-1">info@abtrans.co.id</span>
+                  <span className="mt-1">hello@auratrans.id</span>
                 </li>
               </ul>
             </div>
@@ -470,7 +465,7 @@ export default async function Home() {
 
           <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-800/60 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-slate-500 font-medium">
-              © {new Date().getFullYear()} PT Anugerah Berkah Solution. Hak Cipta Dilindungi.
+              © {new Date().getFullYear()} PT Aura Trans Nusantara. Hak Cipta Dilindungi.
             </p>
             <div className="flex items-center gap-4 text-xs text-slate-600 font-medium">
               <a href="#syarat" className="hover:text-amber-400 transition-colors">Syarat & Ketentuan</a>
